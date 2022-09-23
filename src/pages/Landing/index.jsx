@@ -8,7 +8,7 @@ const index = () => {
       <div className="content">
         <header>
           <h1>
-            Imagine If <span>SnapChat</span> had events.
+            Imagine if <span>SnapChat</span> had events.
           </h1>
           <p>
             Easily host and share events with your friends across any social

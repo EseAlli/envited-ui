@@ -1,8 +1,8 @@
 .landing-page {
   background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
-  min-height: 100%;
   padding: 0 1.75rem;
   font-family: "Helvetica";
+  height: 100vh;
 }
 
 .landing-page .content {
@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  align-content: space-evenly;
-  height: 100vh;
+  gap: 32px;
+  padding-block-start: 60px;
 }
 
 .content header {
@@ -71,7 +71,8 @@ button {
 
 @media (min-width: 768px) {
   .landing-page .content {
-    align-content: stretch;
+    /* align-content: stretch; */
+    gap: 56px;
   }
   .content header {
     max-width: 500px;
@@ -88,7 +89,7 @@ button {
   }
 
   .content img {
-    width: 75%;
+    width: 311px;
   }
 }
 
@@ -97,8 +98,9 @@ button {
     grid-template-columns: repeat(2, 1fr);
     max-width: 80%;
     margin: auto;
-    padding: 1rem auto;
     align-content: center;
+    height: 100%;
+    padding-block-start: 0;
   }
   .content header {
     order: 2;
@@ -121,6 +123,8 @@ button {
   }
   .content img {
     order: 1;
+    /* width: 440px; */
+    margin: 0;
   }
 
   .content button {
