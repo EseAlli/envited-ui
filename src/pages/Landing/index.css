@@ -44,8 +44,12 @@ header p {
   text-align: center;
 }
 
-header button {
+header a button {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content img {
@@ -54,8 +58,11 @@ header button {
   order: 2;
 }
 
-button {
+.content a {
   order: 3;
+}
+
+button {
   background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
   border-radius: 10px;
   width: 70%;
@@ -67,6 +74,7 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -112,9 +120,13 @@ button {
     margin: 1rem auto;
   }
 
-  .content header button {
+  .content header a {
     display: block;
     margin: 1.75rem 0 1.75rem auto;
+  }
+
+  .content header a button {
+    display: inline-block;
   }
 
   header h1 {
@@ -127,7 +139,7 @@ button {
     margin: 0;
   }
 
-  .content button {
+  .content a {
     display: none;
   }
 }

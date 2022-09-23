@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 import landingPageImage from "../../assets/images/lp_img.svg";
 
@@ -14,10 +15,14 @@ const index = () => {
             Easily host and share events with your friends across any social
             media.
           </p>
-          <button>🎉 Create my event</button>
+          <Link to="/create">
+            <button>🎉 Create my event</button>
+          </Link>
         </header>
         <img src={landingPageImage} alt="Events" />
-        <button>🎉 Create my event</button>
+        <Link to="/create">
+          <button>🎉 Create my event</button>
+        </Link>
       </div>
     </div>
   );
