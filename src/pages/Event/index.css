@@ -71,7 +71,7 @@
 @media (min-width: 1280px) {
   .event-page {
     display: flex;
-    max-width: 65%;
+    max-width: 70%;
     justify-content: space-between;
     height: 100vh;
     padding-block-start: 194px;
@@ -84,6 +84,7 @@
 
   .event-content {
     margin-top: 0;
+    width: 446px;
   }
 
   .event-details {
